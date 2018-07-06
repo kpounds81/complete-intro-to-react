@@ -1,3 +1,6 @@
+import React from 'react';
+import { render } from 'react-dom';
+
 const MyTitle = function (props) {
   return (
       React.createElement('div', null,
@@ -15,7 +18,7 @@ const MyFirstComponent = function () {
   )
 }
 
-ReactDOM.render(
+render(
   React.createElement(MyFirstComponent),
   document.getElementById('app')
 )
